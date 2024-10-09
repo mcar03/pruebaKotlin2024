@@ -19,4 +19,15 @@ fun numeroSoluciones(a: Double, b: Double, c: Double): String {
 fun main() {
     val resultado = f1(1.3, -7.0, 2.0, ::numeroSoluciones)
     println(resultado) 
+    
+val multiplicar: (Double, Double, Double) -> Double = { x, y, z -> 
+        if (x == 0.0 && y == 0.0 && z == 0.0) 1.0 else x * y * z 
+    }
+
+    
+    val resultadoMultiplicacion = multiplicar(1.0, 2.0, 3.0)
+
+   
+    println("Resultado de soluciones: $resultado")
+    println("Resultado de multiplicación: $resultadoMultiplicacion")
 }
